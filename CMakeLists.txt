@@ -75,3 +75,5 @@ add_subdirectory(cpr)
 if(BUILD_CPR_TESTS) 
     add_subdirectory(test)
 endif()
+
+install(DIRECTORY include/ DESTINATION include FILES_MATCHING PATTERN "*.h")
